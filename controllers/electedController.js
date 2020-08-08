@@ -4,7 +4,6 @@ const electedCollection = db.collection("elected-officials");
 
 module.exports = {
   getAllElected: (req, res) => {
-    console.log("Getting All Elected");
     electedCollection
       .find()
       .toArray()
@@ -16,7 +15,7 @@ module.exports = {
       });
   },
   getOneElected: (req, res) => {
-    console.log("Get One Elected");
+    console.log({ req });
     electedCollection
       .findOne()
       .then((result) => {
