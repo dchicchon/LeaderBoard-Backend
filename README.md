@@ -1,1 +1,1 @@
-# LeaderBoard-Backend
+# LEADERBOARD Backend
