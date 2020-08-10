@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 
 const connectionString =
-  "mongodb+srv://dchicchon:BDfWGuR7GK1yf8TT@cluster0.b99ts.mongodb.net/leaderboard?retryWrites=true&w=majority";
+  "mongodb+srv://dchicchon:BDfWGuR7GK1yf8TT@cluster-h03qmmwr.b99ts.mongodb.net/heroku_h03qmmwr?retryWrites=true&w=majority";
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
