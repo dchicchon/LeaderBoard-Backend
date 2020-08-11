@@ -12,20 +12,16 @@ module.exports = {
       .catch((err) => {
         console.error(err);
       });
-    // electedCollection
-    //   .find()
-    //   .toArray()
-    //   .then((results) => {
-    //     res.json(results);
-    //   })
-    //   .catch((err) => {
-    //     console.error(err);
-    //   });
   },
 
   getAllElectedFrom: (req, res) => {
-    console.log(req.params);
-    res.send("Returning all elected");
+    Elected.find({ city: req.params })
+      .then((result) => {
+        res.json(result);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   },
 
   getOneElected: (req, res) => {
