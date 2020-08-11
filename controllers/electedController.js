@@ -15,7 +15,7 @@ module.exports = {
   },
 
   getAllElectedFrom: (req, res) => {
-    Elected.find({ city: req.params })
+    Elected.find({ city: req.params.location })
       .then((result) => {
         res.json(result);
       })
